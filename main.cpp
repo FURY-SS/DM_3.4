@@ -179,7 +179,7 @@ int main() {
     // 1 task
     const vector<vector<int> > relationship_m1 = create_relationship_on_points(m1, f);
     const vector<vector<int> > relationship_m2 = create_relationship_on_points(m2, f);
-/*
+
     cout << "Properties M1" << endl;
     print_derived_properties_relationships(relationship_m1);
     cout << "Properties M2" << endl;
@@ -189,7 +189,7 @@ int main() {
     print_matrix(relationship_m1);
     cout << "Relationship M2" << endl;
     print_matrix(relationship_m2);
-*/
+
     // 2 task
     const vector<vector<int> > dominant_m1 = dominante_relationship(relationship_m1);
     const vector<vector<int> > dominant_m2 = dominante_relationship(relationship_m2);
@@ -198,7 +198,7 @@ int main() {
     print_matrix(dominant_m1);
     cout << "Dominant M2" << endl;
     print_matrix(dominant_m2);
-/*
+
     // 3 task
     vector<int> w_m1 = topology_sort(dominant_m1);
     vector<int> w_m2 = topology_sort(dominant_m2);
@@ -213,7 +213,7 @@ int main() {
         cout << -x << " ";
     cout << endl << endl;
 
-
+    /*
     // 5 task
     const vector<size_t> index_max_m1 = get_index_max_element(relationship_m1);
     const vector<size_t> index_min_m1 = get_index_min_element(relationship_m1);
@@ -230,8 +230,6 @@ int main() {
     cout << "Min element in M2: ";
     print_vector_of_points_by_index(m2, index_min_m2);
     cout << endl;
-
 */
-
     return 0;
 }
